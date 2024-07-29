@@ -1,3 +1,2 @@
-# Spotify-Clone
-made this using css and html :)
-use this url ( https://arka6fx.github.io/Spotify-Clone/ ) to have a look!
+# College-Python-Assignments
+In this repo I am going to upload my python based college assignments :)
