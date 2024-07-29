@@ -1,0 +1,13 @@
+x=int(input("Enter the value of x:"))
+y=int(input("Enter the value of y:"))
+z=int(input("Enter the value of z:"))
+print("value of x before rotating =",x)
+print("value of y before rotating =",y)
+print("value of z before rotating =",z)
+temp=x
+x=y
+y=z
+z=temp
+print("value of x after rotating =",x)
+print("value of y after rotating =",y)
+print("value of z after rotating =",z)
