@@ -1,14 +1,10 @@
-a = int(input('Enter 1st number:'))
-b = int(input('Enter 2nd number:'))
-i=1
-if a<b:
-    min = a
-else:
-    min = b
-    
-while i<=min:
-    if a%i==0 and b%i==0:
-        hcf=i
-    i+=1
-print('HCF = ',hcf)    
-        
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+if num1 < num2:
+    num1, num2 = num2, num1
+
+while (num2 != 0):
+    num1, num2 = num2, num1 % num2
+
+print(f"The HCF is {num1}.")
