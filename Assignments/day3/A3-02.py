@@ -3,9 +3,7 @@
 
 num = int(input("Enter a number: "))
 
-
 original_num = num
-
 
 count = 0
 temp_num = num
