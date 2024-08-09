@@ -22,4 +22,5 @@ while True:
         continue
     
    
-print(f"The sum of the even-valued terms in the Fibonacci series up to {limit} is {sum_even}.")
+print(f'''The sum of the even-valued terms in the Fibonacci 
+series up to {limit} is {sum_even}.''')
