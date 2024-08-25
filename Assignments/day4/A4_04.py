@@ -6,7 +6,7 @@ word = input("Enter the word you want to find: ")
 sentence = sentence.lower()
 word = word.lower()
 
-words = sentence.split()
+words = sentence.split() 
 
 count = words.count(word)
 
