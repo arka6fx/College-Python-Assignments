@@ -11,17 +11,14 @@ else:
     else:
        max_num=num2
     
-    lcm=max_num
  
-    while True:
+for i in range(max_num,(num1*num2)+1,max_num):
+    if i%num1==0 and i%num2==0:
+        lcm=i
+        print("LCM is : ",lcm)
+        break  
+    
         
-        if lcm%num1==0 and lcm%num2==0:
-            print("LCM is : ",lcm)
-            break  
-        else:
-            lcm+=max_num
-            continue 
-
 # Alternate approach         
 # num1 = int(input("Enter the first number: "))
 # num2 = int(input("Enter the second number: "))

@@ -7,7 +7,7 @@ if len(s) == 0:
     print("The string is empty.")
 else:
    
-    last_char = s[-1]
+    last_char = s[-1] #storing last character
     
     
     result = ''
@@ -19,7 +19,7 @@ else:
     
 
    
-result = result[:-1] + last_char
+result = result[0:len(s)-1] + last_char
     
 print("Resulting string:", result)
 

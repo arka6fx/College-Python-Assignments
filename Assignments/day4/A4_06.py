@@ -12,8 +12,8 @@ if len(str1) != len(str2):
     print("The strings are not anagrams.")
 else:
     
-    sorted_str1 = ''.join(sorted(str1))
-    sorted_str2 = ''.join(sorted(str2))
+    sorted_str1 = sorted(str1)
+    sorted_str2 = sorted(str2)
     
     if sorted_str1 == sorted_str2:
         print("The strings are anagrams.")

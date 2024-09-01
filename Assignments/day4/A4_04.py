@@ -4,10 +4,6 @@ sentence = input("Write a sentence: ")
 word = input("Enter the word you want to find: ")
 
 sentence = sentence.lower()
-word = word.lower()
-
-words = sentence.split() 
-
-count = words.count(word)
+count = sentence.count(word.lower())
 
 print(f"The word '{word}' appears {count} times in the sentence.")

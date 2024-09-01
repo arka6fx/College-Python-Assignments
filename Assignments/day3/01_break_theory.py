@@ -39,7 +39,8 @@ for i in range(10):
     print(i,end=' ')
 else:# else will be executed only when we are coming of the loop normally
     print("loop is executed normally")
-    
+
+print()    
 for i in range(10):
     if (i==5):
         continue

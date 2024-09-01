@@ -1,6 +1,6 @@
 """A3-02.Write a program to check whether a given number is an Armstrong number or not."""
 
-
+#1^3+5^3 +3^3 =1+125+27=153
 num = int(input("Enter a number: "))
 
 original_num = num

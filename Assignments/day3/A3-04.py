@@ -19,6 +19,5 @@ for number in range(start, end + 1):
     if is_prime:
         sum_of_primes += number
 
-print(f'''The sum of all prime numbers between {start} and 
-      {end} is {sum_of_primes}.''')
+print(f'The sum of all prime numbers between {start} and {end} is {sum_of_primes}.')
 

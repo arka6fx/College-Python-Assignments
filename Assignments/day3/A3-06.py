@@ -1,4 +1,4 @@
-#Write a program to find the sum of the even-valued terms of the fibonacci series up to 100.
+"""Write a program to find the sum of the even-valued terms of the fibonacci series up to 100."""
 
 limit = int(input("Enter the upper limit for the Fibonacci series: "))
 
@@ -22,5 +22,4 @@ while True:
         continue
     
    
-print(f'''The sum of the even-valued terms in the Fibonacci 
-series up to {limit} is {sum_even}.''')
+print(f'The sum of the even-valued terms in the Fibonacci series up to {limit} is {sum_even}.')
