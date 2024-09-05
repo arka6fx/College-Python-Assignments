@@ -1,24 +1,31 @@
+#A5_10. write a program to display unique and duplicate elements of a tuple.
 
-my_tuple = (1, 2, 3, 4, 2, 5, 6, 1, 7, 8, 5)
 
-counts = {}
-duplicates = set()
-uniques = set()
+myTuple = ()
 
-for item in my_tuple:
-    if item in counts:
-        counts[item] += 1
+n = int(input("Enter the number of elements: "))
+
+for i in range(n):
+    element = int(input(f'Enter element no. {i + 1}: '))
+    myTuple += (element,)
+
+
+unique_elements = []
+duplicate_elements = []
+
+seen_elements = []
+
+
+for element in myTuple:
+    if element in seen_elements:
+        if element not in duplicate_elements:
+            duplicate_elements.append(element)
     else:
-        counts[item] = 1
+        seen_elements.append(element)
 
-for item, count in counts.items():
-    if count > 1:
-        duplicates.add(item)
-    else:
-        uniques.add(item)
+final_unique_elements = [element for element in seen_elements if element not in duplicate_elements]
 
-duplicates_list = sorted(list(duplicates))
-uniques_list = sorted(list(uniques))
+print("Unique elements:", final_unique_elements)
+print("Duplicate elements:", duplicate_elements)
 
-print("Unique elements:", uniques_list)
-print("Duplicate elements:", duplicates_list)
+

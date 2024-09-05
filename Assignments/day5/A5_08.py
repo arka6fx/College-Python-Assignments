@@ -1,7 +1,23 @@
-original_tuple = (1, 2, 3)
+#A5_08. write a program to add elements in a tuple without using built-in functions.
 
-additional_elements = (4, 5, 6)
+myTupple= ()
 
-new_tuple = original_tuple + additional_elements
+n = int(input("Enter the number of elements: "))
 
-print("The new tuple is:", new_tuple)
+for i in range(n):
+   
+    element = int(input(f'Enter element no. {i + 1}: '))
+    myTupple += (element,)
+
+sum = 0
+for i in myTupple:
+    sum+=i
+      
+print("sum =",sum)
+
+
+
+
+
+
+

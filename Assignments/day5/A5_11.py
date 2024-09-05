@@ -1,11 +1,26 @@
-my_tuple = (1, 2, 2, 3, 4, 4, 4, 5)
+#A5_11. write a program to count frequency of all the elements in a tuple.
 
-counts = {}
-for item in my_tuple:
-    if item in counts:
-        counts[item] += 1
+myTuple = ()
+n = int(input("Enter the number of elements: "))
+
+for i in range(n):
+    element = int(input(f'Enter element no. {i + 1}: '))
+    myTuple += (element,)
+
+
+elements = []
+frequencies = []
+
+
+for element in myTuple:
+    if element in elements:
+        index = elements.index(element)
+        frequencies[index] += 1
     else:
-        counts[item] = 1
+        elements.append(element)
+        frequencies.append(1)
 
-for item, count in counts.items():
-    print(f"{item}: {count}")
+print("Element frequencies:")
+for i in range(len(elements)):
+    print(f"Element {elements[i]}: {frequencies[i]}")
+

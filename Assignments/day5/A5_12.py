@@ -1,10 +1,18 @@
-my_tuple = (1, 2, 3, 4, 5, 6)
+#A5_12. write a program to find the distinct pair of 
+# numbers whose product is even from a tuple of integers.
+myTupple= ()
 
-pairs = set()
-for i in range(len(my_tuple)):
-    for j in range(i + 1, len(my_tuple)):
-        if (my_tuple[i] * my_tuple[j]) % 2 == 0:
-            pairs.add((my_tuple[i], my_tuple[j]))
+n = int(input("Enter the number of elements: "))
 
-for pair in pairs:
-    print(pair)
+for i in range(n):
+   
+    element = int(input(f'Enter element no. {i + 1}: '))
+    myTupple += (element,)
+
+evenPairs =()
+for i in range(len(myTupple)):
+    for j in range(i + 1, len(myTupple)):
+        if (myTupple[i] * myTupple[j]) % 2 == 0:
+           evenPairs+=((myTupple[i], myTupple[j]),)
+print("Even distinct pairs:")
+print(evenPairs)
