@@ -8,6 +8,8 @@
 #     statement
 #range(6) => end=6(exclusive) step=1 beg=0 (by default)
 
+# Python relies on indentation to define the scope of code blocks.
+
 for i in "python":
     print(i)
     
@@ -23,5 +25,4 @@ while i<6:
     print(s[i],end="")
     i=i+1
   
-     
-        
+

@@ -34,12 +34,12 @@ while i< 10:
 print("bye")
 
 for i in range(10):
-    if (i==5):
+    if (i==2):
         break
     print(i,end=' ')
 else:# else will be executed only when we are coming of the loop normally
     print("loop is executed normally")
-
+#  The else block after a loop executes only if the loop is not terminated by break.
 print()    
 for i in range(10):
     if (i==5):
