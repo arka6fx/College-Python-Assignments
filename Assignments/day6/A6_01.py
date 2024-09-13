@@ -1,4 +1,5 @@
-# A6_01. Write a program to create a dictionary that contains (i, i*i) such that i is an integer number between 1 and n (both included).
+# 9/9/24  A6_01. Write a program to create a dictionary that contains (i, i*i) such that i is an integer 
+# number between 1 and n (both included).
 
 n = int(input("Enter a number n: "))
 
