@@ -1,0 +1,26 @@
+copy
+nearestKeyIndex = 0;
+
+if (numKeys > 0){
+  nearestKeyIndex = nearestKey(time).index;
+
+  if (key(nearestKeyIndex).time > time){
+    nearestKeyIndex--;
+  }
+}
+
+if (nearestKeyIndex == 0) {
+  currentTime = 0;
+} else {
+  currentTime = time - key(nearestKeyIndex).time;
+}
+
+if (nearestKeyIndex > 0 && currentTime < 1) {
+  calculatedVelocity = velocityAtTime(key(nearestKeyIndex).time - thisComp.frameDuration / 10);
+  amplitude = 0.1;
+  frequency = 1.0;
+  decay = 0.5;
+  value + calculatedVelocity * amplitude * Math.sin(frequency * currentTime * 2 * Math.PI) / Math.exp(decay * currentTime);
+} else {
+  value;
+}
