@@ -27,7 +27,7 @@ print('{} has scored {} in math'.format('Ronit',98))
 print('{1} has scored {0} in math'.format('Ronit',98))# change order
 print('{m} has scored {n} in math'.format(n='Ronit',m=98))
 print('1/3 is {0:.4f}'.format(1/3))
-print('{:04.2f}'.format(14.2568697))#also includes point 
+print('{0:04.2f}'.format(14.2568697))#also includes point 
 # Format String Breakdown:
 
 # {:04.2f}:
@@ -36,7 +36,7 @@ print('{:04.2f}'.format(14.2568697))#also includes point
 # .2f specifies that the number should be formatted as a
 # floating-point number with 2 decimal places.
 
-print('{:06.2f}'.format(14.2568697))
+print('{0:06.2f}'.format(14.2568697))
 
 # String Index --> access single character
 s='python'
@@ -90,7 +90,7 @@ s2='11 ,12 , 13'
 print(s2.split(',',2))
 # Splitting by Whitespace:
 print(s2.split(' ',2))
-print(s.split('h',2))
+print(s.split('o',2))
 #str.join(seq)  joins lists , tuples
 s=['python','program']
 print(''.join(s)) # creats object
@@ -104,7 +104,7 @@ print('+'.join(s4))
 
 
 
-str = "i am studying python from ApnaCollege"
+str = "i am studying python myself"
 str = str.capitalize()
 print()
 print(str)

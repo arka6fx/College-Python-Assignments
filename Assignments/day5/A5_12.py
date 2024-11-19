@@ -4,10 +4,7 @@ myTuple= ()
 
 n = int(input("Enter the number of elements: "))
 
-for i in range(n):
-   
-    element = int(input(f'Enter element no. {i + 1}: '))
-    myTuple += (element,)
+myTuple = tuple(int(input(f'Enter element no. {i + 1}: ')) for i in range(n))
 
 evenPairs =()
 for i in range(len(myTuple)):

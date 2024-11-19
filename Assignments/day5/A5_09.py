@@ -2,13 +2,11 @@
 
 myTupple= ()
 n = int(input("Enter the number of elements: "))
-for i in range(n):
-   
-    element = int(input(f'Enter element no. {i + 1}: '))
-    myTupple += (element,)
+
+myTuple = tuple(int(input(f'Enter element no. {i + 1}: ')) for i in range(n))
 
 sum = 0
-count=0
+count = 0
 for i in myTupple:
     sum+=i
     count+=1

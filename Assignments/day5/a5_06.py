@@ -3,9 +3,9 @@
 l1= []
 n = int(input("Enter the no. of elements: "))
 print("Enter the elements: ")
-for i in range (n):
-    element = int(input(f'Enter element no. {i+1} : '))
-    l1.append(element)
+
+l1 = [int(input(f'Enter element no. {i+1} : ')) for i in range(n)]
+ 
 
 oddPairs = []
 

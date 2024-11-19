@@ -23,11 +23,11 @@ print(type(l))
 l1=[10,23,34]
 len(l1)
 t=()
-type(t)
+print(type(t))
 t1=(10)
-type(t1)
+print(type(t1))
 t1=(1,)
-type(t1)
+print(type(t1))
 t2=(1,2,3)
 l2=list(t2)
 print(l2[::-1]) #reversing using slicing
@@ -53,7 +53,7 @@ print(id(l2))
 #list comprehension
 # [expression for item in iterable if condition]
 
-l=[x for x in range(1,10) if x%2==0]
+l=[2*x for x in range(1,10) if x%2==0]
 print(l)
 
 [print(i,end=' ') for i in l]
@@ -99,12 +99,13 @@ l1=[10,20,30,10,20]
 print(l1.count(20))
 print(l1.count(0))
 
-#l.index()
+#l.index() applicable for tuple
 l1=[10,20,30,40,50]
 print(l1.index(20))
-# print(l1.index(0))
 
-#l.remove(i)
+
+
+#l.remove(i)  
 l1=[10,20,30,40,50]
 
 l1.remove(20)
@@ -117,6 +118,7 @@ l1=[10,20,30]
 print(l1)
 
 del l1[1] #not applicable for tuple
+
 l1=[10,20,30]
 print(l1)
 

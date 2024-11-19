@@ -5,7 +5,7 @@
 d = {'Math': 98, 'English': 97, 'Sci': 95}
 len(d)
 print(d)
-
+ 
 #orddict
 d = {'Math': 98, 'English': 97, 'Sci': 95}
 #print(d['math'])

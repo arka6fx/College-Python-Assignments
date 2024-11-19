@@ -17,9 +17,6 @@ while True:
 
     if a % 2 == 0:
         sum_even += a
-        
-    else:        
-        continue
     
    
 print(f'The sum of the even-valued terms in the Fibonacci series up to {limit} is {sum_even}.')

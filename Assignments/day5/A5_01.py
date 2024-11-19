@@ -18,5 +18,5 @@ for i in range (len(l)):
     if (l[i]>max):
         max = l[i]
 
-print(f"Minimun element is {min}")
+print(f"Minimum element is {min}")
 print(f"Maximum element is {max}")

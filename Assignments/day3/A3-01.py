@@ -1,4 +1,4 @@
-"""A3-01. Write a program to check whetehr a given number is a prime or not."""
+"""A3-01. Write a program to check whether a given number is a prime or not."""
 
 number = int(input("Enter a number: "))
 
