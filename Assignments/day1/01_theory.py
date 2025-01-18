@@ -4,11 +4,12 @@
 # True
 # Flase
 # None
-
 # 3/2 = 1.5
 # 3//2 = 1 (floor divison operator)
 # 3.00//2 = 1.0
-# x=5,y=5
+x=5
+y=5
+print(x is y)
 # Two variables pointing to same object
 print(3/2)
 
