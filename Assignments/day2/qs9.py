@@ -1,24 +1,21 @@
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
-num3 = float(input("Enter the third number: "))
+
+a = float(input("Enter the first number: "))
+b = float(input("Enter the second number: "))
+c = float(input("Enter the third number: "))
 
 
-if num1 >= num2 and num1 >= num3:
-    largest = num1
-elif num2 >= num1 and num2 >= num3:
-    largest = num2
-else:
-    largest = num3
-
-
-if num1 <= num2 and num1 <= num3:
-    smallest = num1
-elif num2 <= num1 and num2 <= num3:
-    smallest = num2
-else:
-    smallest = num3
-
-
-middle = (num1 + num2 + num3) - largest - smallest
-
-print("Sorted numbers:", smallest, middle, largest)
+if a <= b and a <= c:  
+    if b <= c:
+        print("Sorted order:", a, b, c)
+    else:
+        print("Sorted order:", a, c, b)
+elif b <= a and b <= c:  
+    if a <= c:
+        print("Sorted order:", b, a, c)
+    else:
+        print("Sorted order:", b, c, a)
+else:  
+    if a <= b:
+        print("Sorted order:", c, a, b)
+    else:
+        print("Sorted order:", c, b, a)
