@@ -12,9 +12,7 @@ for char in s:
         result += '*'
     else:
         result += char
-    
-
-   
+           
 result = result[0:len(s)-1] + last_char
     
 print("Resulting string:", result)

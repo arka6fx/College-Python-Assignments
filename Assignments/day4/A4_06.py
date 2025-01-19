@@ -19,3 +19,8 @@ else:
         print("The strings are anagrams.")
     else:
         print("The strings are not anagrams.")
+# example
+# str1 = "listen"
+# str2 = "silent"
+# sorted(str1) returns ['e', 'i', 'l', 'n', 's', 't'].
+# sorted(str2) returns ['e', 'i', 'l', 'n', 's', 't'].
