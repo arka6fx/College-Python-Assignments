@@ -10,7 +10,5 @@ try:
     for line in lines:
         print(line.strip()[::-1])  # Strip whitespace and reverse the line
 
-except FileNotFoundError:
-    print("Error: The file does not exist. Please check the file name and try again.")
-except Exception as e:
-    print(f"An unexpected error occurred: {e}")
+except IOError as e:
+    print(e)

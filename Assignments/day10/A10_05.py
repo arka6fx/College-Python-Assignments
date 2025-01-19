@@ -19,7 +19,5 @@ try:
 
     print(f"Content has been copied to '{destination_file}' with all lowercase letters converted to uppercase.")
 
-except FileNotFoundError:
-    print("Error: The source file does not exist. Please check the file name and try again.")
-except Exception as e:
-    print(f"An unexpected error occurred: {e}")
+except IOError as e:
+    print(e)

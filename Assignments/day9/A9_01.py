@@ -6,7 +6,7 @@ try:
     number = float(input("Enter a number: "))
     
     if number < 0:
-        raise ValueError("The number is negative. Please enter a positive number or zero.")
+        raise ValueError('''The number is negative. Please enter positive number or zero.''')
     
     print(f"The entered number is: {number}")
 

@@ -15,7 +15,5 @@ try:
     print(f"The number of words in the file '{file_name}' is: {word_count}")
 
 
-except FileNotFoundError:
-    print("Error: The file does not exist. Please check the file name and try again.")
-except Exception as e:
-    print(f"An unexpected error occurred: {e}")
+except IOError as e:
+    print(e)

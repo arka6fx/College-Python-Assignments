@@ -18,7 +18,5 @@ try:
     print(f"Content reversed and stored in '{destination_file}' successfully.")
 
 
-except FileNotFoundError:
-    print("Error: The source file does not exist. Please check the file name and try again.")
-except Exception as e:
-    print(f"An unexpected error occurred: {e}")
+except IOError as e:
+    print(e)
