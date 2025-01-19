@@ -1,7 +1,7 @@
 #Dictionaries
 #(just like structure in c)
 #unordered sequence of elemnts
-#mutable
+
 #key:value pair
 d = {'Math': 98, 'English': 97, 'Sci': 95}
 len(d)
