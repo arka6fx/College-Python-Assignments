@@ -10,7 +10,7 @@ for i in range(n):
      nsp+=1
      print()
     
-# Another method    
+# Another methods    
 n=5
 nst=2*n-1
 nsp=0
@@ -20,6 +20,7 @@ for i in range(n):
      nst-=2
      nsp+=1
      print()    
+
 
 n=5
 
