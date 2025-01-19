@@ -3,19 +3,15 @@ all occurences of the last character have been changed to '*', except the last c
 
 s = input('Enter a string: ')
 
-if len(s) == 0:
-    print("The string is empty.")
-else:
-   
-    last_char = s[-1] #storing last character
+last_char = s[-1] #storing last character
     
     
-    result = ''
-    for char in s:
-        if char == last_char:
-            result += '*'
-        else:
-            result += char
+result = ''
+for char in s:
+    if char == last_char:
+        result += '*'
+    else:
+        result += char
     
 
    
