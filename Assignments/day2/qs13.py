@@ -1,11 +1,14 @@
-num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
 
-if(num1<num2):
-    num1,num2=num2,num1
+while b != 0:
+    a, b = b, a % b
 
-while(num2!=0):
-    num1,num2=num2,num1%num2
-    
-print(f"The HCF of the number is {num1}")        
+print(f"The GCD of the given numbers is {a}")
+ 
 
+# def gcd(a,b):
+#     if(a%b==0):
+#         return b
+#     else:
+#         return gcd(b,a%b)
