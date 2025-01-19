@@ -2,13 +2,11 @@
 # defining a function to compute GCD and LCM.
 
 def gcd(a, b):
-    """Computes the greatest common divisor (GCD) of two integers a and b."""
     while(b!=0):
         a, b = b, a % b  
     return a
 
 def lcm(a, b):
-    """Computes the least common multiple (LCM) of two integers a and b."""
     return (a * b) // gcd(a, b) 
 
 # Get input from the user
