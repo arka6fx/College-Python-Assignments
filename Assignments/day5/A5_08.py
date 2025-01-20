@@ -1,6 +1,6 @@
 #A5_08. write a program to add elements in a tuple without using built-in functions.
 
-myTuple= ()
+
 
 n = int(input("Enter the number of elements: "))
 
