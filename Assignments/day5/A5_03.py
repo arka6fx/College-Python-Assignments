@@ -14,7 +14,7 @@ for j in range (m):
     element = int(input(f'Enter element no. {j+1} : '))
     l2.append(element)
 
-union = l1[:]
+union = l1[::]
 
 for element in l2:
     if element not in union:
