@@ -6,15 +6,8 @@ myTuple = tuple(int(input(f'Enter element no. {i + 1}: ')) for i in range(n))
 
 sum = 0
 count = 0
-for i in myTupple:
-    sum+=i
-    count+=1
+for i in myTuple:  # Fixed typo from 'myTupple' to 'myTuple'
+    sum += i
+    count += 1
       
-print("Mean =",sum/count)
-
-
-
-
-
-
-
+print("Mean =", sum / count)
