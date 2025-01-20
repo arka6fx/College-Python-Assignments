@@ -1,5 +1,5 @@
 # A9_03.  Write a program to read a number from the user and print its square. 
-# Generate Keyboard Interrupt exception if Ctrl + C is pressed instead of a number.
+# Generate KeyboardInterrupt exception if Ctrl + C is pressed instead of a number.
 
 
 try:

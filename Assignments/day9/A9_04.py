@@ -1,5 +1,5 @@
 # A9_04.  Write a program to print random numbers infinitely.
-# Raise the Stop Iteration exception after displaying 10 numbers to exit from the program.
+# Raise the StopIteration exception after displaying 10 numbers to exit from the program.
 
 import random
 
