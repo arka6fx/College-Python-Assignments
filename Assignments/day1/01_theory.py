@@ -12,6 +12,7 @@ x=5
 y=5
 print(x is y)
 # Two variables pointing to same object
-
+print(0xff)
+print(hex(255))
 
 
