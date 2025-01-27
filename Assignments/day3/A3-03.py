@@ -3,10 +3,7 @@ num1=int(input("Enter the first number: "))
 num2=int(input("Enter the second number: "))
   
     
-if num1>num2:
-    max_num=num1
-else:
-    max_num=num2
+max_num = num1 if num1>num2 else num2
     
  
 for i in range(max_num,(num1*num2)+1,max_num):

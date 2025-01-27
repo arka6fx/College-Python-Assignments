@@ -1,7 +1,7 @@
 #list comprehension
 # [expression for item in iterable if condition]
 
-l=[2*x for x in range(1,10) if x%2==0]
+l=[2*x for x in range(1,10) if x%2==0 ]
 print(l)
 
 [print(i,end=' ') for i in l]
