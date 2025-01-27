@@ -1,5 +1,5 @@
 l1 = [10, 60, 30]
-l1.reverse
+l1.reverse()
 print(l1)
 
 t=tuple(l1)
